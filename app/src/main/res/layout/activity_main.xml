@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.weiyu.myscrollview.MainActivity">
+
+    <!--<include layout="@layout/myscrollview"/>-->
+
+    <!--<com.example.weiyu.myscrollview.MyDragView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#000"/>-->
+
+    <com.example.weiyu.myscrollview.DragViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_dark">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main"/>
+        </FrameLayout>
+    </com.example.weiyu.myscrollview.DragViewGroup>
+</LinearLayout>
